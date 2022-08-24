@@ -1,0 +1,119 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+% Font sizes: 10, 11, or 12;
+% paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape;
+% font families: sans or roman
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+
+% CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvstyle{classic}
+% CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{purple}
+\usepackage[utf8]{inputenc}
+ % Reduce document margins
+\usepackage[scale=0.8]{geometry}
+% Uncomment to change the width of the dates column
+%\setlength{\hintscolumnwidth}{3cm}
+% For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+%\setlength{\makecvtitlenamewidth}{10}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Mark}
+\familyname{Håkansson}
+
+% All information in this block is optional, comment out any lines you don't need
+\title{CV}
+\address{Tunastigen 23}{973 44 Luleå SWEDEN}
+\mobile{+46 76-339 64 87 }
+\email{mark.hakansson@tuta.io}
+% The first argument is the url for the clickable link, the second argument is the url displayed in the template
+% this allows special characters to be displayed such as the tilde in this example
+% \homepage{https://www.linkedin.com/in/markhakansson/} {}
+%\homepage{https://sites.google.com/view/sikka-anmol/home}{Homepage}
+%\extrainfo{DOB: September 15, 1997}
+% The first bracket is the picture height, the second is the thickness of the frame around the picture
+% (0pt for no frame)
+\photo[70pt][0.4pt]{image/profile.jpeg}
+%\quote{"A witty and playful quotation" - John Smith}
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCES SECTION
+%----------------------------------------------------------------------------------------
+\section{Employment}
+
+\cventry{Jul 2021 -- Present}{Grepit AB}{}{}{\textit{Software engineer. Luleå, Sweden}}{}
+\cventry{Jun 2020 --Sep 2020}{Xolaris Civil Security AB}{}{}{\textit{Software / DevOps engineer. Luleå, Sweden}}{}
+\cventry{Jun 2018 --Dec 2019}{Systembolaget AB}{}{}{\textit{Part-time store employee. Uddevalla, Sweden}}{}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\cventry{2016--2022}{Luleå University of Technology}{}{}{\textit{MSc. Computer Science and Engineering with focus on Information and Communication Technology. Luleå, Sweden}}{}
+
+
+%----------------------------------------------------------------------------------------
+%	Course Projects SECTION
+%----------------------------------------------------------------------------------------
+\section{Projects}
+\cventry{Sep 2021 -- Present}{Zpark}{}{}{\textit{I mainly work with all the software that is run on all of the devices in a Zpark charging station. This includes device firmware, embedded applications and the development of the systems used to maintain devices already out in production. I am also responsible for developing the software used in producing said devices for a charging station, to ensure that any faults in the devices are detected before leaving the production facility.}}{}
+\cventry{Jan 2021 -- May 2022}{RAUK}{}{}{\textit{My master thesis, RTIC Analysis Using KLEE. It resulted in the schedulability analysis tool RAUK. Which could analyze simple embedded applications written in the RTIC framework, to determine the schedulability of the system using established formal methods.}}{}
+\cventry{Sep 2020 -- Jan 2021}{RPA Tomorrow}{}{}{\textit{Worked in a group to create an application that could take user text and automate tasks from it. Utilizing natural language processing and machine learning.}}{}
+\cventry{Jun 2020 -- Sep 2020}{Xolaris Cloud Project}{}{}{\textit{Worked with moving certain infrastructure to Google Kubernetes Engine. As well as developing some cloud tools to support said infrastructure.}}{}
+
+
+%----------------------------------------------------------------------------------------
+%	Skills SECTION
+%----------------------------------------------------------------------------------------
+\section{Technical Skills}
+
+\cvitem{Languages}{\textsc{Rust, C, C++, Python, Go}}
+
+\cvitem{Frameworks}{\textsc{RTIC}}
+
+\cvitem{Technology}{\textsc{Ansible, GitLab CI/CD, Linux, Terraform}}
+
+
+%----------------------------------------------------------------------------------------
+%	LINKS SECTION
+%----------------------------------------------------------------------------------------
+\section{Links}
+\cvitemwithcomment{GitHub}{\url{https://github.com/markhakansson}}{}
+\cvitemwithcomment{GitLab}{\url{https://gitlab.com/markhakansson}}{}
+
+\end{document}
